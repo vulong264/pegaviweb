@@ -23,15 +23,13 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
   <script>
-    if (window.location.protocol == "http:") {
-      window.location = document.URL.replace("http://", "https://");
+    if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
     }
-  }
   </script>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">

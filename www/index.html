@@ -26,6 +26,12 @@
 </head>
 
 <body id="page-top">
+  <!-- remove quote before deploy to production -->
+    <script>
+    if (location.protocol !== 'https:') {
+    location.replace(`https:${location.href.substring(location.protocol.length)}`);
+    }
+  </script>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -44,9 +50,9 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
           </li>
@@ -133,11 +139,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/intellativ.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>USA Client</h4>
-            <p class="text-muted">Pegasystems</p>
+            <h4>Intellativ.com</h4>
+            <p class="text-muted">Pegasystems BPM Development</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -147,10 +153,10 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/vds.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Holland Client</h4>
+            <h4>Vds-solutions.com</h4>
             <p class="text-muted">Offshore software development</p>
           </div>
         </div>
@@ -161,11 +167,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/rlcthumb.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>GoodRun</h4>
-            <p class="text-muted">Mobile App development</p>
+            <h4>RLC US</h4>
+            <p class="text-muted">Custom ERP Integration</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -189,11 +195,11 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio/goodrun.png" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Southwest</h4>
-            <p class="text-muted">Website Design</p>
+            <h4>GoodRun</h4>
+            <p class="text-muted">Mobile App Development</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -214,7 +220,7 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- About 
   <section class="page-section" id="about">
     <div class="container">
       <div class="row">
@@ -294,13 +300,13 @@
       </div>
     </div>
   </section>
-
+  -->
   <!-- Team -->
   <section class="bg-light page-section" id="team">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Crew</h2>
+          <h2 class="section-heading text-uppercase">Meet our crew</h2>
           <h3 class="section-subheading text-muted">"Ambition is the path to success. Persistence is the vehicle you arrive in". Meet our relentless warriors</h3>
         </div>
       </div>
@@ -311,7 +317,7 @@
             <h4>Tung Nguyen</h4>
             <p class="text-muted">Pegasystems Lead Consultant</p>
             <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
+              <!-- <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
                 </a>
@@ -320,9 +326,9 @@
                 <a href="#">
                   <i class="fab fa-facebook-f"></i>
                 </a>
-              </li>
+              </li> -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/tungnguyen095/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -332,9 +338,10 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Hung Tran</h4>
+            <h4>Dr. Hung Tran Tuan</h4>
             <p class="text-muted">Lead Software Development</p>
             <ul class="list-inline social-buttons">
+              <!-- 
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
@@ -345,8 +352,9 @@
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
+            -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/hung-tuan-tran-8a0a2b98/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -356,9 +364,10 @@
         <div class="col-sm-4">
           <div class="team-member">
             <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Tony Vu</h4>
+            <h4>Marc Cámara García</h4>
             <p class="text-muted">Lead Consultant</p>
             <ul class="list-inline social-buttons">
+              <!-- 
               <li class="list-inline-item">
                 <a href="#">
                   <i class="fab fa-twitter"></i>
@@ -369,8 +378,9 @@
                   <i class="fab fa-facebook-f"></i>
                 </a>
               </li>
+            -->
               <li class="list-inline-item">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/marccamara/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -380,7 +390,7 @@
       </div>
       <div class="row">
         <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+          <p class="large text-muted">We set up the team that you need, based on the exact skill set you require for your project. Our members are augmented into your project and workflow, working as if they were a part of your company and helping to boost your velocity and output</p>
         </div>
       </div>
     </div>
